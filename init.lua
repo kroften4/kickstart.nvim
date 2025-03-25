@@ -1029,7 +1029,7 @@ require('lazy').setup({
   },
 })
 
--- GOVNO
+-- compile treeSHITTER parsers with zig to work on windows.
 require('nvim-treesitter.install').compilers = { 'zig', 'clang', 'clang-cl', 'gcc' }
 
 -- The line beneath this is called `modeline`. See `:help modeline`
