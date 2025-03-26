@@ -1,3 +1,24 @@
+# My installation steps
+Install [scoop](https://scoop.sh/): in PowerShell
+```bash
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+```
+Install zig
+```bash
+scoop install zig
+```
+Install [chocolatey](https://chocolatey.org/install): in cmd as **admin**
+```
+winget install --accept-source-agreements chocolatey.chocolatey
+```
+
+Install all requirements using choco, exit the previous cmd and
+open a new one so that choco path is set, and run in cmd as **admin**:
+```
+choco install -y neovim git ripgrep wget fd unzip gzip mingw make
+```
+
 # kickstart.nvim
 
 ## Introduction
